@@ -1,0 +1,18 @@
+# Security: Never upload your database keys
+.env
+.env.local
+
+# Storage: Don't upload the actual book files (too big/copyright)
+PlanetEbooks/
+*.epub
+*.pdf
+
+# Python Junk
+__pycache__/
+*.pyc
+venv/
+
+.idea
+
+.DS_Store
+
