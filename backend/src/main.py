@@ -15,6 +15,9 @@ app = FastAPI(
 app.include_router(books)
 app.include_router(chapters)
 app.include_router(author)
+
+
+app = app
 @app.get("/",status_code=HTTP_200_OK,tags = ["Health"])
 def health_check():
     return{
