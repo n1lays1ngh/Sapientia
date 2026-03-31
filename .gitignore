@@ -1,5 +1,5 @@
 # Security: Never upload your database keys
-.env
+Sapientia_database_setup/.env
 .env.local
 
 # Storage: Don't upload the actual book files (too big/copyright)

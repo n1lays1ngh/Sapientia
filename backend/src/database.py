@@ -12,8 +12,8 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 engine = create_engine(
     DATABASE_URL,
     echo=True,
-    # pool_pre_ping=True,
-    poolclass=NullPool
+    poolclass=NullPool,
+    connect_args={"sslmode": "require"}
 )
 
 def get_session():
